@@ -291,10 +291,10 @@
             </objects>
             <point key="canvasLocation" x="1766.6666666666667" y="115.84821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Asylum Seeker Info View Controller-->
         <scene sceneID="9fk-SS-QDn">
             <objects>
-                <viewController id="NHq-e0-ZpG" sceneMemberID="viewController">
+                <viewController id="NHq-e0-ZpG" customClass="AsylumSeekerInfoViewController" customModule="RAHI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ghF-fj-zQt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -317,7 +317,7 @@
                                 <rect key="frame" x="28" y="197" width="325" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -338,13 +338,16 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="COUNTRY OF ORIGIN" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tOS-Jo-y3f" customClass="YoshikoTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="27" y="276" width="325" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -364,6 +367,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
                                         <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
@@ -371,7 +377,7 @@
                                 <rect key="frame" x="27" y="358" width="59" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -391,6 +397,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
                                         <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
@@ -489,6 +498,9 @@
                                 <state key="normal" title="Asylum Application" backgroundImage="RoundedInterestsButton">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="asylumInterest:" destination="NHq-e0-ZpG" eventType="touchUpInside" id="bOV-mH-nD2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKX-Ar-oh0">
                                 <rect key="frame" x="31" y="710" width="85" height="44"/>
@@ -497,6 +509,9 @@
                                 <state key="normal" title="Medical Aid" backgroundImage="RoundedInterestsButton">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="medicalAidInterest:" destination="NHq-e0-ZpG" eventType="touchUpInside" id="r1b-b5-EEM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqn-IC-cLn">
                                 <rect key="frame" x="165" y="655" width="187" height="47"/>
@@ -505,6 +520,9 @@
                                 <state key="normal" title="Research Projects &amp; Health" backgroundImage="RoundedInterestsButton">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="researchInterest:" destination="NHq-e0-ZpG" eventType="touchUpInside" id="CZG-47-CRS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmH-i7-RyZ">
                                 <rect key="frame" x="127" y="710" width="77" height="44"/>
@@ -513,6 +531,9 @@
                                 <state key="normal" title="Donations" backgroundImage="RoundedInterestsButton">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="donationInterest:" destination="NHq-e0-ZpG" eventType="touchUpInside" id="bmW-ry-eQE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwq-TX-d2g">
                                 <rect key="frame" x="212" y="710" width="140" height="44"/>
@@ -521,6 +542,9 @@
                                 <state key="normal" title="Other Interests" backgroundImage="RoundedInterestsButton">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="otherInterest:" destination="NHq-e0-ZpG" eventType="touchUpInside" id="HVW-nD-dTn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCS-2Q-hqT">
                                 <rect key="frame" x="28" y="796" width="338" height="50"/>
@@ -531,12 +555,21 @@
                                 </state>
                                 <connections>
                                     <action selector="signUp:" destination="vos-Vi-oD8" eventType="touchUpInside" id="1ef-hl-clv"/>
+                                    <action selector="submitButton:" destination="NHq-e0-ZpG" eventType="touchUpInside" id="aIR-bZ-f2X"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="czz-Za-NmB"/>
                     </view>
+                    <connections>
+                        <outlet property="ageField" destination="LBE-8W-dfW" id="Ov5-aZ-HA7"/>
+                        <outlet property="asylumSeekerOptionField" destination="MHG-xD-Pzj" id="P7G-vC-dr6"/>
+                        <outlet property="countryOfOriginField" destination="tOS-Jo-y3f" id="ie0-Fk-mvw"/>
+                        <outlet property="currentLocationField" destination="VVb-4D-Hww" id="Hkf-JD-JCv"/>
+                        <outlet property="fullNameField" destination="2WS-D0-lyH" id="CtT-Jm-jqA"/>
+                        <outlet property="numberOfFamilyField" destination="O8r-Pv-NaX" id="NbY-Ea-Bfq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4b-t0-S9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

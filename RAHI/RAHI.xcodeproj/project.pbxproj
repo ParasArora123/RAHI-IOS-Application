@@ -16,6 +16,7 @@
 		53C7CCFF22815CEB0095F24D /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7CCFE22815CEB0095F24D /* LoggedInViewController.swift */; };
 		53C7CD0122815D4B0095F24D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7CD0022815D4B0095F24D /* Extensions.swift */; };
 		53C7CD03228161260095F24D /* UserIdentityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7CD02228161260095F24D /* UserIdentityViewController.swift */; };
+		53C7CD05228235A90095F24D /* AsylumSeekerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7CD04228235A80095F24D /* AsylumSeekerInfoViewController.swift */; };
 		93F3504C1CF10265C4F75AA3 /* Pods_RAHI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B61A4813D8DCF952FAB89D /* Pods_RAHI.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		53C7CCFE22815CEB0095F24D /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
 		53C7CD0022815D4B0095F24D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		53C7CD02228161260095F24D /* UserIdentityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIdentityViewController.swift; sourceTree = "<group>"; };
+		53C7CD04228235A80095F24D /* AsylumSeekerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsylumSeekerInfoViewController.swift; sourceTree = "<group>"; };
 		746D26C23F308CE79620C82C /* Pods-RAHI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAHI.release.xcconfig"; path = "Target Support Files/Pods-RAHI/Pods-RAHI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 				53857CE92281450E00927AEF /* ViewController.swift */,
 				53C7CD0022815D4B0095F24D /* Extensions.swift */,
 				53857CEB2281450E00927AEF /* Main.storyboard */,
+				53C7CD04228235A80095F24D /* AsylumSeekerInfoViewController.swift */,
 				53C7CD02228161260095F24D /* UserIdentityViewController.swift */,
 				53C7CCFE22815CEB0095F24D /* LoggedInViewController.swift */,
 				53C7CCFC228158050095F24D /* SignInViewController.swift */,
@@ -230,6 +233,7 @@
 				53C7CCFD228158050095F24D /* SignInViewController.swift in Sources */,
 				53C7CD03228161260095F24D /* UserIdentityViewController.swift in Sources */,
 				53C7CCFF22815CEB0095F24D /* LoggedInViewController.swift in Sources */,
+				53C7CD05228235A90095F24D /* AsylumSeekerInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
