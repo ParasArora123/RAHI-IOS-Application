@@ -14,8 +14,27 @@ import TextFieldEffects
 
 class UserIdentityViewController: UIViewController
 {
+	let currentUser = PFUser.current()
+	
 	override func viewDidLoad()
 	{
 		super.viewDidLoad()
 	}
+	
+	@IBAction func asylumSeekerCardButton(_ sender: Any)
+	{
+		currentUser!["status"] = "asylum"
+	}
+	
+	@IBAction func professionalCardButton(_ sender: Any)
+	{
+		currentUser!["status"] = "professional"
+	}
+	
+	@IBAction func interestedPersonCardButton(_ sender: Any)
+	{
+		currentUser!["status"] = "regular"
+	}
+	
+	
 }
