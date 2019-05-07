@@ -12,6 +12,10 @@
 		53857CED2281450E00927AEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53857CEB2281450E00927AEF /* Main.storyboard */; };
 		53857CEF2281451000927AEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53857CEE2281451000927AEF /* Assets.xcassets */; };
 		53857CF22281451000927AEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53857CF02281451000927AEF /* LaunchScreen.storyboard */; };
+		53C7CCFD228158050095F24D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7CCFC228158050095F24D /* SignInViewController.swift */; };
+		53C7CCFF22815CEB0095F24D /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7CCFE22815CEB0095F24D /* LoggedInViewController.swift */; };
+		53C7CD0122815D4B0095F24D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7CD0022815D4B0095F24D /* Extensions.swift */; };
+		53C7CD03228161260095F24D /* UserIdentityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C7CD02228161260095F24D /* UserIdentityViewController.swift */; };
 		93F3504C1CF10265C4F75AA3 /* Pods_RAHI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B61A4813D8DCF952FAB89D /* Pods_RAHI.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +29,10 @@
 		53857CEE2281451000927AEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53857CF12281451000927AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53857CF32281451000927AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53C7CCFC228158050095F24D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		53C7CCFE22815CEB0095F24D /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
+		53C7CD0022815D4B0095F24D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		53C7CD02228161260095F24D /* UserIdentityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIdentityViewController.swift; sourceTree = "<group>"; };
 		746D26C23F308CE79620C82C /* Pods-RAHI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAHI.release.xcconfig"; path = "Target Support Files/Pods-RAHI/Pods-RAHI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +79,11 @@
 			children = (
 				53857CE72281450E00927AEF /* AppDelegate.swift */,
 				53857CE92281450E00927AEF /* ViewController.swift */,
+				53C7CD0022815D4B0095F24D /* Extensions.swift */,
 				53857CEB2281450E00927AEF /* Main.storyboard */,
+				53C7CD02228161260095F24D /* UserIdentityViewController.swift */,
+				53C7CCFE22815CEB0095F24D /* LoggedInViewController.swift */,
+				53C7CCFC228158050095F24D /* SignInViewController.swift */,
 				53857CEE2281451000927AEF /* Assets.xcassets */,
 				53857CF02281451000927AEF /* LaunchScreen.storyboard */,
 				53857CF32281451000927AEF /* Info.plist */,
@@ -85,7 +97,6 @@
 				0BA68E1900EF4A4700D25D15 /* Pods-RAHI.debug.xcconfig */,
 				746D26C23F308CE79620C82C /* Pods-RAHI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,8 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C7CD0122815D4B0095F24D /* Extensions.swift in Sources */,
 				53857CEA2281450E00927AEF /* ViewController.swift in Sources */,
 				53857CE82281450E00927AEF /* AppDelegate.swift in Sources */,
+				53C7CCFD228158050095F24D /* SignInViewController.swift in Sources */,
+				53C7CD03228161260095F24D /* UserIdentityViewController.swift in Sources */,
+				53C7CCFF22815CEB0095F24D /* LoggedInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

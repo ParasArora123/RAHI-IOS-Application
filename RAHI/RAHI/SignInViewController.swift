@@ -1,31 +1,33 @@
 //
-//  ViewController.swift
+//  SignInViewController.swift
 //  RAHI
 //
 //  Created by Anupa Arora on 5/6/19.
 //  Copyright © 2019 RAHI@UCSF_PARAS_ARORA. All rights reserved.
 //
 
-import UIKit
+// NOTE: THIS IS ACTUALLY THE SIGN UP VIEW CONTROLLER BUT I'M JUST AN IDIOT AND NAMED IT INCORRECTLY AND REALLY DON'T WANT TO GO BACK AND CHANGE THE NAME FOR IT IN EVERY FILE ETC.
+
 import Foundation
 import Parse
+import UIKit
 import TextFieldEffects
 
-class ViewController: UIViewController
+class SignInViewController: UIViewController
 {
-	
-
-	@IBOutlet weak var signInUsernameField: HoshiTextField!
-	@IBOutlet weak var signInPasswordField: HoshiTextField!
+	@IBOutlet weak var signUpEmailField: HoshiTextField!
+	@IBOutlet weak var signUpUsernameField: HoshiTextField!
+	@IBOutlet weak var signUpPasswordField: HoshiTextField!
 	
 	override func viewDidLoad()
 	{
 		super.viewDidLoad()
 		
-		signInUsernameField.text = ""
-		signInPasswordField.text = ""
+		signUpEmailField.text = ""
+		signUpUsernameField.text = ""
+		signUpPasswordField.text = ""
 	}
-
+	
 	override func viewDidAppear(_ animated: Bool)
 	{
 		let currentUser = PFUser.current()
@@ -56,25 +58,25 @@ class ViewController: UIViewController
 		self.present(alertView, animated: true, completion:nil)
 	}
 	
-	@IBAction func signIn(_ sender: Any)
+	@IBAction func signUp(_ sender: Any)
 	{
+		let user = PFUser()
+		
+		user.username = signUpUsernameField.text
+		user.password = signUpPasswordField.text
+		user.email = signUpEmailField.text
+		
 		let sv = UIViewController.displaySpinner(onView: self.view)
-		PFUser.logInWithUsername(inBackground: signInUsernameField.text!, password: signInPasswordField.text!) { (user, error) in
+		user.signUpInBackground { (success, error) in
 			UIViewController.removeSpinner(spinner: sv)
-			if user != nil
-			{
+			if success{
 				self.loadHomeScreen()
-			}
-			else
-			{
+			}else{
 				if let descrip = error?.localizedDescription{
-					self.displayErrorMessage(message: (descrip))
+					self.displayErrorMessage(message: descrip)
 				}
 			}
 		}
 	}
 	
-	
-	
 }
-
