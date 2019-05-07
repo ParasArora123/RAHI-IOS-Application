@@ -38,7 +38,7 @@ class ViewController: UIViewController
 	func loadHomeScreen()
 	{
 		let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-		let loggedInViewController = storyBoard.instantiateViewController(withIdentifier: "LoggedInViewController") as! LoggedInViewController
+		let loggedInViewController = storyBoard.instantiateViewController(withIdentifier: "UserIdentityViewController") as! UserIdentityViewController
 		self.present(loggedInViewController, animated: true, completion: nil)
 	}
 	

@@ -241,20 +241,45 @@
             </objects>
             <point key="canvasLocation" x="893" y="116"/>
         </scene>
-        <!--View Controller-->
+        <!--User Identity View Controller-->
         <scene sceneID="seF-eN-jss">
             <objects>
-                <viewController id="nFN-MX-gJS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserIdentityViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nFN-MX-gJS" customClass="UserIdentityViewController" customModule="RAHI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UG8-zP-zdB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I AM A..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RV-vV-jJz">
+                                <rect key="frame" x="30" y="58" width="215" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="55"/>
+                                <color key="textColor" red="0.27479076390000001" green="0.5571715236" blue="0.89757764340000001" alpha="0.74561215753424659" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ari-DW-g1x">
+                                <rect key="frame" x="6" y="145" width="401" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" backgroundImage="AsylumSeekerCard"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjP-y2-YnW">
+                                <rect key="frame" x="-4" y="394" width="409" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="ProfessionalCard"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTn-Js-Rem">
+                                <rect key="frame" x="6" y="642" width="408" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="InterestedPersonCard"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7MU-3C-uPM"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qE-jv-qMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1768" y="116"/>
+            <point key="canvasLocation" x="1766.6666666666667" y="115.84821428571428"/>
         </scene>
         <!--Logged In View Controller-->
         <scene sceneID="M3x-nD-Wtq">
@@ -283,7 +308,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AsylumSeekerCard" width="360" height="233"/>
         <image name="BlueSubmitButton" width="290" height="50"/>
         <image name="Globe" width="305" height="271"/>
+        <image name="InterestedPersonCard" width="360" height="223"/>
+        <image name="ProfessionalCard" width="360" height="232"/>
     </resources>
 </document>
