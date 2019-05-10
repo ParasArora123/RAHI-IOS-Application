@@ -21,19 +21,36 @@ class UserIdentityViewController: UIViewController
 		super.viewDidLoad()
 	}
 	
+	func saveData()
+	{
+		currentUser?.saveInBackground(block: { (success: Bool, error: Error?) in
+			if success
+			{
+				print("succesful motherfuckers")
+			}
+			else
+			{
+				print(LocalizedError.self)
+			}
+		})
+	}
+	
 	@IBAction func asylumSeekerCardButton(_ sender: Any)
 	{
-		currentUser!["status"] = "asylum"
+		currentUser!["status"] = "asylum seeker"
+		saveData()
 	}
 	
 	@IBAction func professionalCardButton(_ sender: Any)
 	{
 		currentUser!["status"] = "professional"
+		saveData()
 	}
 	
 	@IBAction func interestedPersonCardButton(_ sender: Any)
 	{
 		currentUser!["status"] = "regular"
+		saveData()
 	}
 	
 	
